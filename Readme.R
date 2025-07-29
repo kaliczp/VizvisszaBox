@@ -7,7 +7,7 @@ library(readxl)
 rawkut <- as.data.frame(read_excel("boxplotok vs távolság.xlsx", range = "B3:U58", col_names = FALSE))
 
 ## Oszlopnevek, excelből
-colnames(rawkut) <- LETTERS[2:ncol(rawkut)]
+colnames(rawkut) <- LETTERS[2:(ncol(rawkut)+1)]
 
 ## Boxplot
 boxplot(rawkut)
