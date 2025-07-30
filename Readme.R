@@ -5,6 +5,8 @@ library(readxl)
 ## Beolvasás
 ## A dátum, az nem kell, B-U - ig a boxplot alapanyagok, 2-58-ig fejléccel
 rawkut <- as.data.frame(read_excel("boxplotok vs távolság2.xlsx", range = "B2:U58"))
+## Ha gond a számokkal
+## colnames(rawkut) <- as.numeric(colnames(rawkut))
 
 ## Felirat a tetejére
 rawnev <- as.data.frame(read_excel("boxplotok vs távolság2.xlsx", range = "B1:U2"))
