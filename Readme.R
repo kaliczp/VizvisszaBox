@@ -4,10 +4,10 @@ library(readxl)
 
 ## Beolvasás
 ## A dátum, az nem kell, B-U - ig a boxplot alapanyagok, 2-58-ig fejléccel
-rawkut <- as.data.frame(read_excel("boxplotok vs távolság.xlsx", range = "B2:U58"))
+rawkut <- as.data.frame(read_excel("boxplotok vs távolság2.xlsx", range = "B2:U58"))
 
 ## Felirat a tetejére
-rawnev <- as.data.frame(read_excel("boxplotok vs távolság.xlsx", range = "B1:U2"))
+rawnev <- as.data.frame(read_excel("boxplotok vs távolság2.xlsx", range = "B1:U2"))
 
 ## Boxplot
 par(mar= c(3.1,3.1,3.1,1.1), las = 2)
